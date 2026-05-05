@@ -1,9 +1,13 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Header } from './header/header';
+import { CommonModule } from '@angular/common';
+import { PokemonList } from './pokemon-list/pokemon-list';
+import { NgxPaginationModule } from 'ngx-pagination';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [Header, CommonModule, PokemonList, NgxPaginationModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
