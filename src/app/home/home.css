@@ -1,0 +1,53 @@
+.menu-section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.menu-section h2 {
+    text-transform: uppercase;
+    color: blueviolet;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    border-bottom: 3px solid blueviolet;
+    padding-bottom: 10px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.card {
+    background-color: #f9f4ff;
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    padding: 24px;
+    line-height: 1.8;
+    color: #333;
+    box-shadow: 4px 4px 0px blueviolet;
+}
+
+.card p {
+    margin: 0 0 10px 0;
+    font-size: 0.97rem;
+}
+
+.card hr {
+    border: none;
+    border-top: 1px solid #d4b3f7;
+    margin: 16px 0;
+    
+}
+.card {
+    /* add to existing .card styles */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 4px 10px 0px blueviolet;
+}

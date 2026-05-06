@@ -7,3 +7,53 @@
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #fff8e7;
+    background-image: radial-gradient(circle, #f5d76e 1px, transparent 1px);
+    background-size: 28px 28px;
+}
+
+nav {
+    padding: 16px 0;
+    text-align: center;
+    background-color: #f5c400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    box-shadow: 0 4px 0px #e53935;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-transform: uppercase;
+    color: #1a1a1a;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    transition: opacity 0.2s ease;
+}
+
+.nav-links li a:hover {
+    opacity: 0.6;
+}
+
+.nav-links li a.active-link {
+    border-bottom: 2px solid #e53935;
+    padding-bottom: 4px;
+}
+
+.nav-divider {
+    height: 6px;
+    background: linear-gradient(90deg, #e53935, #f5c400, #e53935);
+}

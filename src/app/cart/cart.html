@@ -1,0 +1,12 @@
+<h2>Your Cart</h2>
+
+<ul>
+  @for(item of cartService.getCart(); track item.name){
+    <li>
+      {{item.name}} - {{item.price}} ₽
+      <button (click)="cartService.removeFromCart(item)">Remove</button>
+    </li>
+  }
+</ul>
+
+<h3>Total: {{cartService.getTotal()}} ₽</h3>

@@ -1,0 +1,18 @@
+
+<div class="container">
+    <h1>Johto Region</h1>
+    @for(johto of johtoService.johto(); track johto.name){
+        <div class="kanto">
+            <h2>Pokemon: {{ johto.name }}</h2>
+            <ul>
+                @for(pokemon of johto.type; track $index){
+                    <li>
+                        <strong>Type: {{johto.type[$index]}}</strong>
+                    </li>
+                }
+                    <p>Item: {{johto.item}}</p>
+                    <p>Description: {{johto.description}}</p>
+            </ul>
+        </div>
+    }
+</div>

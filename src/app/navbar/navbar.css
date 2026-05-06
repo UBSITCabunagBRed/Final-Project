@@ -1,0 +1,40 @@
+nav {
+    padding: 20px 0px;
+    text-align: center;
+    background-color: gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    border-color: black;
+}
+
+.logo {
+    /* style your logo here */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.nav-links li a:hover {
+    opacity: 0.75;
+}
+
+.nav-links li a.active-link {
+    border-bottom: 2px solid white;
+    padding-bottom: 4px;
+}

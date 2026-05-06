@@ -1,0 +1,64 @@
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.container h1 {
+    text-transform: uppercase;
+    color: green;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    border-bottom: 3px solid green;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.kanto {
+    background-color: #f9f4ff;
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 0px green;
+}
+
+.kanto h2 {
+    text-transform: uppercase;
+    color: green;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.kanto ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.kanto ul li {
+    margin-bottom: 6px;
+}
+
+.kanto ul li strong {
+    color: green;
+    font-size: 0.95rem;
+}
+
+.kanto ul p {
+    margin: 8px 0;
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.7;
+}
+.kanto {
+    /* add to existing .kanto styles */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.kanto:hover {
+    transform: translateY(-6px);
+    box-shadow: 4px 10px 0px greenyellow;
+}

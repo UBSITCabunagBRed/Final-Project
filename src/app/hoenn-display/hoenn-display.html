@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>Hoenn Region</h1>
+    @for(hoenn of hoennService.hoenn(); track hoenn.name){
+        <div class="kanto">
+            <h2>Pokemon: {{ hoenn.name }}</h2>
+            <ul>
+                @for(pokemon of hoenn.type; track $index){
+                    <li>
+                        <strong>Type: {{hoenn.type[$index]}}</strong>
+                    </li>
+                }
+                    <p>Item: {{hoenn.item}}</p>
+                    <p>Description: {{hoenn.description}}</p>
+            </ul>
+        </div>
+    }
+</div>

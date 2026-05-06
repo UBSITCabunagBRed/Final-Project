@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>Kanto Region</h1>
+    @for(kanto of kantoService.kanto(); track kanto.name){
+        <div class="kanto">
+            <h2>Pokemon: {{ kanto.name }}</h2>
+            <ul>
+                @for(pokemon of kanto.type; track $index){
+                    <li>
+                        <strong>Type: {{kanto.type[$index]}}</strong>
+                    </li>
+                }
+                    <p>Item: {{kanto.item}}</p>
+                    <p>Description: {{kanto.description}}</p>
+            </ul>
+        </div>
+    }
+</div>

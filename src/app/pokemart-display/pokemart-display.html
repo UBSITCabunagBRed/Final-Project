@@ -1,0 +1,8 @@
+<h2>PokéMart</h2>
+
+@for(items of pokemartService.pokemart(); track items.name){
+  <div class="item">
+    <strong>{{items.name}}</strong> - {{items.price}} ₽
+    <button (click)="pokemartService.addToCart(items)">Add to Cart</button>
+  </div>
+}
